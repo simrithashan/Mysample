@@ -1,0 +1,142 @@
+body{
+	font-family: 'PT Sans', sans-serif;/*font for the web page*/
+	background-color: #252529;/*background color of the webpage*/
+	margin: 0;/*margin 0 means no margin space*/
+	color: #fff;/*color of the text*/
+	line-height: 1.6;    /*the space between each line*/
+}
+a{
+	text-decoration: none;/*none means no decoration needed and it will remove the unserline line in link*/
+	color: #ccc;
+}
+#home{
+	margin: 0; /*div portion margin is 0 & padding of div is 0*/
+	padding: 0;
+	background: url('chocolate 5.jpg') no-repeat center/cover; /*for div background instead of separate pic ,alignment all are given in one*/
+	/*and no-repeat means img wont repeat and center/cover means img is in center and covered fully*/
+	width: 100%;
+	height: 100vh; /*view-port which means the the view the user gets its a kind of measurement*/
+	position: relative;/*means the picture will be fixed and wont move and makes browser understand that this img is relative to this*/
+	overflow: hidden;/*you img will be bulged out off the webpage background color to avoid that*/
+}
+#home .container{
+	/*inside one div which has home id another div is present with cls container*/
+	margin-top: 25vh; /*the next div part moves from top margin*/ 	
+}
+#home h1{
+	font-size: 4rem;/*root element fornt size, mostly used metric for font*/
+	margin-bottom: 0;/*to avoid extra space bellow h1*/
+}
+#home h2{
+	font-size: 2rem;/*root element fornt size, mostly used metric for font*/
+}
+nav{
+	/*this is for bar*/
+	height:  40px;/*heght of nav tag*/
+	width: 100%;/*so the width will be 100 foe the page*/
+	background: #333;
+	color:  rgb(51, 34,34);/*list dot will change to black and not text bez the nav key contains li &ul tag and text is inside 'a' tag*/
+	position: fixed;/*so that the bar dont move*/
+}
+nav ul{
+	/*this is for the list*/
+	margin: 0;
+	padding: 0;/*so that all the items will be exactly on the bar*/
+}
+nav li{
+	/*now for the navigation links we are styling*/
+	display: inline;/*all items in one line*/
+	float: left;/*all to the left*/
+}
+nav a{
+	/*now for individual link to look like block and to diffrentiate with color while we takethe cursor over the link*/
+	display: inline-block;/*to show a block but this not come as separate block still this first*/
+	width: 100px;/*now this gives width for each*/
+	text-align: center;/*all the content in center*/
+	text-decoration: none;/*removes the dot*/
+	padding: 10px 0;/*top, bottom-10 / leftright-0*/
+	color: #eee;
+}
+nav li:hover{
+	background-color: #444;/*box with grey color to the likns*/
+}
+.container{
+	/*unique effect the class container (for content)*/
+	max-width: 1180px;/*the width of the screen is 1180 for browser to understand*/
+	text-align: center;/*text -center*/
+	margin: 0 auto;/*it will be automatically equal margin arround the content*/
+	padding: 0 3rem;
+}
+.led{
+	font-size: 1.3rem;
+}
+.holdingcontainer
+{
+    max-width: 100%;
+    display: flex;
+    background: #ffc728;
+    padding: 50px;
+    box-sizing: border-box;
+    flex-direction: row;
+}
+.internalcontainerL{
+    flex: 1;
+    background: #8b4513;
+    padding: 50px;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    margin: 3px;
+}
+.internalcontainerM{
+    flex: 1;
+    background: #8b4513;
+    padding: 50px;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    margin: 3px;
+}
+.internalcontainerR{
+    flex: 1;
+    background: #8b4513;
+    padding: 60px;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    margin: 3px;
+}
+@media screen and (max-width: 768px)
+{
+    .holdingcontainer{
+    flex-direction: column-reverse;
+    }
+}
+.another{
+	font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    margin: 3px;
+    align-content: bottom;
+
+}
+footer .footer-cls{
+	display: grid;/*rows and colomn format*/
+	grid-gap: 20px;/*gap*/
+	grid-template-columns: repeat(1, 1fr);/*repeat means repeat for all and there is 3 separate content so 3 and 1fr is 1 fragment for each*/
+	padding: 2rem;
+	text text-align: center;
+	font-size: 14px;
+}
+footer .footer-cls ul{
+	list-style: none;/*removes dot or bullet*/
+}
+footer .footer-cls ul li:first-child{
+	/*so for the first li alone i.e for the About Us heading*/
+	font-size: 1.2rem;
+	padding-bottom: 0rem;
+	border-bottom: #444 solid 1px;/*line border with grey color solid style 1px thickness*/
+	margin-bottom: 1rem;/*space btw line and bellow content*/
+}
+footer .footer-bottom{
+	/*for the coppy rights*/
+	background-color: #333;
+	padding: 1rem;
+	text-align: center;
+}
